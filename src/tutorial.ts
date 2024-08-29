@@ -4,14 +4,14 @@ function nameInList(name:string):boolean{
   return (names.includes(name));
   
 }
-let nameToCheck = 'Charles'
+let nameToCheck = 'Jane'
 //This has to be true for this program to execute
-if(nameInList(nameToCheck)){
-console.log(`The name ${nameToCheck} is there in the array`);
+if(!nameInList(nameToCheck)){
+console.log(`The name ${nameToCheck} is not there in the array`);
 
 }
 //If the first checks do not pass it then comes to the next line of code
-else if (!nameInList(nameToCheck)){
+else if (nameInList(nameToCheck)){
 console.log('There is no name');
 
 }
